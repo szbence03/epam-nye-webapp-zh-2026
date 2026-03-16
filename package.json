@@ -1,0 +1,17 @@
+{
+    "name": "epam-nye-webapp-zh-2026",
+    "version": "0.0.1",
+    "type": "module",
+    "author": {
+        "name": "Attila Gyöngyösi",
+        "email": "attila_gyongyosi@epam.com",
+        "url": "https://github.com/attilagyongyosi"
+    },
+    "scripts": {
+        "test": "vitest run --coverage"
+    },
+    "devDependencies": {
+        "@vitest/coverage-v8": "4.1.0",
+        "vitest": "4.1.0"
+    }
+}
