@@ -8,6 +8,7 @@
     </head>
     <body>
         <!-- Task 1: Add a webpage header here with the text "Our Company", according to design.jpg -->
+         <header><h1>Our Company</h1></header>
 
         <main id="employee-container">
             <!--
@@ -29,15 +30,17 @@
 
                 You DON'T have to be 100% pixel-perfect, but similar to the picture.
             -->
-            <template id="employee-template">
-                <div class="employee-card">
-                    <img class="employee-pic" src="https://placehold.co/32x32/000000/FFFFFF/png" alt="profile picture">
-                    <!--
-                        Use the placeholders {{employee-name}} and {{employee-role}} in your HTML.
-                        They will be replaced with actual text by the JavaScript logic automatically.
-                     -->
+            
+                    <template id="employee-template">
+            <div class="employee-card">
+                <img class="employee-pic" src="https://placehold.co/32x32/000000/FFFFFF/png" alt="profile picture">
+                <div class="employee-info">
+                    <div class="employee-name">{{employee-name}}</div>
+                    <div class="employee-role">{{employee-role}}</div>
                 </div>
-            </template>
+            </div>
+        </template>
+
         </main>
     </body>
 </html>
