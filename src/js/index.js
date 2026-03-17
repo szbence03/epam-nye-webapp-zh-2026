@@ -11,7 +11,9 @@ export const employees = [
  * Return an array of names of employees who earn more than the given limit.
  */
 export function getHighEarners(staff, limit) {
-    return [];
+    return staff
+        .filter(employee => employee.salary > limit)
+        .map(employee => employee.name);
 }
 
 /**
@@ -21,5 +23,13 @@ export function getHighEarners(staff, limit) {
  * Return the updated array.
  */
 export function applyDevBonus(staff) {
-    return [];
+    return staff.map(employee => {
+        if (employee.role === "Developer") {
+            return {
+                ...employee,
+                salary: Math.round(employee.salary * 1.1)
+            };
+        }
+        return { ...employee };
+    });
 }
